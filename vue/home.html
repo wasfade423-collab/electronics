@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/sortie.css">
 </head>
 <body>
-    <header>
-        <nav class="flex items-center justify-between max-lg:px-[5%] lg:px-8 py-4 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+    <header class="sticky top-0 z-50">
+        <nav class="flex items-center justify-between max-lg:px-[5%] lg:px-8 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100">
   
             <div class="flex gap-8 text-gray-700 font-medium max-lg:hidden">
                 <a href="#" class="hover:text-emerald-500 transition-colors duration-300">Home</a>
@@ -116,7 +116,7 @@
                         <div class="bg-gray-500/20 w-9/10 rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
                         <h3 class="font-bold text-center text-xl">Nom du produit</h3>
                         <span class="text-sm">
-                             Un son et un style qui se remarquent.
+                            Un son et un style qui se remarquent.
                         </span>
                         <div class="flex gap-20">
                             <span class="mt-2">1500 XOF</span>
@@ -177,21 +177,21 @@
                     </li>                    
                 </div>
             </div>
-            <div class="w-1/2">
-                <h3>Nom de l'article</h3>
+            <div class="w-1/2 flex flex-col gap-2">
+                <h3 class="text-center font-bold text-2xl my-2">Nom de l'article</h3>
                 <span>
-                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité
+                    Un son et un style qui se remarquent.
                 </span>
-                <p>
+                <p class="my-2">
                     <span class="font-black">Pourquoi vedriez-vous l'avoir?</span>
-                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notre trépied Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité.
                 </p>
-                <div>
-                    <span>Unité : </span>
+                <div class="text-2xl">
+                    <span class="font-bold">Unité : </span>
                     <span>1500XOF</span>
-                    <span class=" hidden text-gray-500/80 text-[12px] line-through">2000XOF</span>
+                    <span class="text-gray-500/80 text-[14px] line-through">2000XOF</span>
                 </div>
-                <select class="rounded-sm outline-none p-1 border-1 border-green-800 text-green-800 text-lg" name="color" id="color">
+                <select class=" w-3/5 my-2 rounded-sm outline-none p-1 border-1 border-green-800 text-green-800 text-lg" name="color" id="color">
                     <option value="" selected disabled>Choisir une couleur</option>
                     <option value="white">Blanc</option>
                     <option value="black">Noir</option>
@@ -200,23 +200,117 @@
                     <option value="rose">Rose</option>
                     <option value="blue">Bleu</option>
                 </select>
-                <div>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <div class="flex gap-2">
+                    <button class="cursor-pointer rounded-sm flex justify-center items-center border-1 text-3xl border-green-800 h-[32px] w-[32px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
                         </svg>                        
                     </button>
-                    <button class="rounded-sm border-1 text-3xl border-green-800 h-[32px] w-[32px]">1</button>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5">
+                    <button class="cursor-pointer rounded-sm border-1 text-2xl border-green-800 bg-green-800/80 text-white h-[32px] w-[32px]">1</button>
+                    <button class="cursor-pointer rounded-sm border-1 border-green-800 text-green-800 flex justify-center items-center text-3xl  h-[32px] w-[32px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                         </svg>
                     </button>
                 </div>
+                <div class="flex gap-4 w-10/12 mx-auto my-4">
+                    <button class=" w-1/2 cursor-pointer rounded-sm border-1 text-2xl border-green-800 px-2 py-1 bg-green-800/80 text-white ">
+                        Ajouter au Panier
+                    </button>
+                    <button class="w-1/2 cursor-pointer rounded-sm border-1 border-green-800 py-1 px-2 text-green-800 flex justify-center items-center text-3xl">
+                        Retour
+                    </button>                    
+                </div>
             </div>
         </section>
-
     </main>
+    <footer class=" mt-8 bg-gray-500/20">
+        <div class="pl-[1%] pt-2 flex justify-between max-w-[1050px] mx-auto">
+            <ul class="flex text-lg flex-col">
+                <h3>Company</h3>
+                <li class="text-md hover:underline duration-300">Home</li>
+                <li class="text-md hover:underline duration-300">Nos produits</li>
+                <li class="text-md hover:underline duration-300">Contact</li>
+            </ul>
+            <ul class="flex flex-col text-lg">
+                <h3>Nos contacts</h3>
+                <li class="flex gap-2">
+                    
+<svg class="mt-[3px]" version="1.0" xmlns="http://www.w3.org/2000/svg"
+width="14pt" height="14pt" viewBox="0 0 512.000000 512.000000"
+preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M2164 4659 c-1060 -46 -1695 -322 -1977 -858 -110 -208 -177 -485
+-177 -727 l0 -84 519 0 519 0 6 38 c3 20 8 60 12 87 17 139 65 295 119 389
+123 218 288 320 605 373 208 35 1345 26 1577 -12 101 -16 236 -56 298 -88 101
+-51 191 -137 254 -242 64 -105 121 -302 136 -467 l7 -78 528 0 528 0 -4 83
+c-16 288 -64 496 -160 691 -251 505 -777 782 -1654 871 -323 32 -748 41 -1136
+24z"/>
+<path d="M1530 3333 c-56 -11 -60 -23 -60 -187 l0 -151 -61 -69 c-269 -306
+-867 -1117 -1008 -1367 l-32 -57 3 -475 c3 -462 4 -476 24 -503 11 -15 33 -37
+48 -48 l27 -21 2027 -3 2027 -2 44 22 c83 43 81 27 81 569 l0 476 -68 109
+c-185 297 -677 961 -939 1265 l-83 97 0 140 c0 77 -4 152 -10 166 -14 39 -68
+48 -265 44 -143 -2 -175 -6 -198 -21 l-27 -17 0 -130 0 -130 -550 0 -550 0 0
+128 c0 175 12 167 -224 169 -99 0 -192 -1 -206 -4z m439 -688 c54 -28 81 -71
+81 -130 0 -43 -5 -60 -26 -85 -53 -62 -118 -76 -184 -39 -48 27 -72 69 -72
+126 0 101 114 174 201 128z m601 -3 c102 -51 106 -192 8 -252 -69 -42 -157
+-15 -195 60 -13 24 -23 54 -23 65 0 11 10 41 23 65 37 73 114 99 187 62z m619
+-9 c40 -30 63 -81 58 -132 -9 -81 -75 -136 -156 -128 -143 15 -178 203 -50
+270 42 22 110 18 148 -10z m-1213 -489 c52 -25 77 -74 72 -140 -4 -43 -11 -61
+-33 -84 -121 -127 -316 27 -224 176 36 59 117 80 185 48z m602 -4 c156 -96 33
+-330 -132 -251 -80 39 -107 135 -58 209 39 60 128 80 190 42z m603 -3 c96 -64
+86 -203 -17 -252 -99 -47 -216 39 -201 147 14 107 131 163 218 105z m-1194
+-497 c84 -51 85 -182 2 -240 -38 -28 -117 -30 -154 -6 -39 26 -65 75 -65 124
+0 85 56 142 140 142 27 0 58 -8 77 -20z m598 0 c88 -55 84 -199 -8 -246 -92
+-48 -201 9 -213 112 -14 113 122 195 221 134z m611 -11 c55 -50 67 -118 33
+-179 -72 -127 -269 -77 -269 70 0 37 19 77 52 106 33 30 46 34 106 30 38 -2
+59 -9 78 -27z"/>
+<path d="M3 2808 c9 -84 21 -125 56 -180 36 -57 106 -93 206 -108 93 -13 443
+-13 525 1 170 27 245 107 257 275 l6 74 -528 0 -528 0 6 -62z"/>
+<path d="M4064 2855 c-9 -23 15 -143 36 -185 20 -39 75 -87 121 -107 63 -27
+179 -35 420 -30 274 5 318 14 386 72 49 42 80 110 89 198 l7 67 -527 0 c-458
+0 -527 -2 -532 -15z"/>
+</g>
+</svg>               
+                        
+                    <span>
+                        +229 0197XXXXXX / +229 01 95XXXXXX
+                    </span>
+                </li>
+                <li class="flex gap-2">
+                    <i class="mt-[3px]">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#000000" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4a2 2 0 012-2m16 0h-3.382a2 2 0 00-1.788 1.118l-1.636 3.272a2 2 0 01-1.788 1.118H8.818a2 2 0 01-1.788-1.118l-1.636-3.272A2 2 0 003.582 13H4M12 3v8m0 0l-3-3m3 3l3-3" />
+</svg>
+                    </i>
+                    <span>mnoemail@gmail.com</span>
+                </li>
+                <li class="flex gap-2"><i class='bx  bx-location-alt-2 text-2xl mt-[3px] text-black'></i><span>Lokossa</span></li>
+            </ul>
+            <div class="flex space-y-0.5 flex-col">
+                <h3>Recevez de nouvelles promotions</h3>
+                <span class="border-1 text-xl rounded-sm mt-2 flex">
+                    <img src="../images/mail.png" class="m-1 w-[16px] h-[25px]" alt="">
+                    <input type="text" placeholder="ex: example@gmail.com" class="outline-none">
+                    <input type="submit" value="Subscribe" class="cursor-pointer outiline-none text-white bg-green-800 px-1">
+                </span>
+                <div class="my-4 flex gap-2 ml-12">
+                    <a class="rounded-sm flex items-center w-[40px] h-[40px] bg-[#1976d2] justify-center">
+                        <img src="../images/facebook.png" class="rounded-full w-1/2" alt="">
+                    </a>
+                    <a class="rounded-sm flex items-center w-[40px] h-[40px] bg-[#39ae41] justify-center">
+                        <img src="../images/what.png" class="rounded-full w-1/2" alt="">
+                    </a>    
+                    <a class="rounded-sm flex items-center w-[40px] h-[40px] bg-center bg-cover bg-[url('../images/instagram.png')] justify-center">
+                    </a>                                     
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-2 text-center border-gray-500 bg-gray-700/10 pt-4 pb-1">Copyright © 2025 By Wasfade Tonoukoin. All rights reserved.</p>
+    </footer>
 </body>
 </html> 
 
