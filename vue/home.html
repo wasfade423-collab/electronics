@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-service By Dolce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/sortie.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="sticky top-0 z-50">
@@ -42,22 +43,23 @@
         </nav>
     </header>
     <main>
-        <section class="flex flex-col h-[450px] mt-1">
+        <section class="hero flex flex-col  md:h-[580px] mt-1">
             <div class="flex mt-2 flex-4">
                 
-                <div class="w-2/5 ml-[10%] flex flex-col items-start justify-center h-9/10 p-0 mr-0 ">
-                    <h1 class="font-bold text-4xl" style="font-family: Public Sans;">Son pur, confort Total</h1>
-                    <span class="text-sm font-medium text-gray-500 w-9/12 mt-1">
-                        "Découvrez une nouvelle dimension sonore avec nos écouteurs de haute qualité. Explorez aussi notre sélection d’appareils électroniques innovants, pensés pour simplifier et enrichir votre quotidien."
+                <div class="md:w-2/5 md:ml-[10%] flex flex-col items-start justify-center md:h-9/10">
+                    <h1 class="font-bold max-md:text-center text-4xl max-md:text-[25px]" style="font-family: Public Sans;">Son pur, confort Total</h1>
+                    <span class="text-sm font-medium text-gray-500 max-md:text-black max-md:text-[10px] md:w-9/12 md:mt-1">
+                        "Découvrez une nouvelle dimension sonore avec nos écouteurs de haute qualité. 
+                        Explorez aussi notre sélection d’appareils électroniques innovants, pensés pour simplifier et enrichir votre quotidien."
                     </span>
-                    <button class="bg-[#0A8433] px-4 py-1 text-white rounded-sm mt-3 hover:transform-s cursor-pointer text-xl">
+                    <button class="bg-[#0A8433] px-4 py-1 text-white rounded-sm md:mt-3 max-md:mt-2 cursor-pointer text-xl">
                         Shop now
                     </button>
                 </div>
-                    <div class="w-3/5 bg-[url(../images/base.png)] object-cover bg-no-repeat h-9/10">
+                <div class="max-md:hidden w-3/5 bg-[url(../images/base.png)] object-cover bg-no-repeat md:h-9/10">
                 </div>
             </div>
-            <article class="w-screen flex gap-1 px-2 flex-1 justify-center items-center">
+            <article class="w-screen max-md:hidden flex gap-1 px-2 flex-1 justify-center items-center">
                 <div class="flex flex-col w-[8%]">
                     <img src="../images/sansFilW.jpg" class="9/10" alt="">
                     <span class="font-semibold text-center text-black">Ecouteurs</span>
@@ -100,50 +102,202 @@
                 </div>
             </article>
         </section>
-        <section class=" mx-[6%] my-10 ">
-            <div class="space-x-2 mx-auto w-[400px]">
-                <h1 class="text-center">Nos articles</h1>
-                <div class="flex justify-center gap-10 mt-2">
-                    <button class="bg-green-800 px-4 cursor-pointer py-2 text-md text-white rounded-sm">Populaires</button>
-                    <button class="border-green-800 cursor-pointer px-4 py-2 text-md border-1 text-green-800 text-green-800 rounded-sm">Nouveaux</button>
-                </div> 
-                
+        <section class="md:mx-[5px] max-md:mx-[1%]  md:my-10 ">
+            <div class="space-x-2 mx-auto md:w-[400px]">
+                <h1 class="font-bold max-md:text-center text-4xl max-md:text-[25px] text-center">Nos articles</h1>
+                <div class="flex md:justify-center md:m-5 max-md:mx-[15%] gap-10 mt-2 justify-between">
+                    <button class="bg-green-800 px-4 cursor-pointer py-3 md:w-[200px] text-md text-white rounded-sm">Populaires</button>
+                    <button class="border-green-800 cursor-pointer px-4 py-3 md:w-[200px] text-md border-1 text-green-800 rounded-sm">Nouveaux</button>
+                </div>     
             </div>
-            <div class="flex gap-1 flex-wrap mt-4">
-                <div class="basis-1/5">
-                    <div class="relative rounded-t-md">
-                        <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[10px] top-0 right-6 text-sm">Populaire</span>
-                        <div class="bg-gray-500/20 w-9/10 rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
-                        <h3 class="font-bold text-center text-xl">Nom du produit</h3>
-                        <span class="text-sm">
+            <div class="articles flex flex-wrap justify-center gap-3 mt-[30px]">
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
                             Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
                         </span>
-                        <div class="flex gap-20">
-                            <span class="mt-2">1500 XOF</span>
-                            <button class="rounded-full border-1 p-2 w-[40px] h-[40px]">
-                                <img src="../images/add-to-cart.png" class="w-full" alt="">
-                            </button>
-                        </div>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
                     </div>
+                </div>
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div> 
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div> 
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div> 
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div> 
+                <!--
+                    voici des jetons d'essais
+                -->
+                <div class="article md:w-[1/5] max-md:basis-[30%] relative rounded-t-md">
+                    <span class="absolute bg-[#EBBD32] z-10 px-1 rounded-[6px] top-0 right-0 max-md:py-[1px] text-sm max-md:right-0 max-md:rounded-[2px] max-md:text-[10px]">Populaire</span>
+                    <div class="bg-gray-500/20 w-full rounded-t-[15px] p-2"><img src="../images/bleu.png" alt=""></div>
+                    <h3 class="md:font-bold md:text-center md:text-xl max-md:text-[12px] max-md:font-semibold max-md:mt-1">Nom du produit</h3>
+                    <span class="md:text-sm max-md:font-light max-md:text-[12px] max-md:hidden">
+                            Un son et un style qui se remarquent.
+                    </span>
+                    <div class="max-md:flex flex md:gap-20 max-md:gap-[8px] max-md:items-center justify-between">                            
+                        <span class="md:mt-2 max-md:text-[12px]">1500 XOF 
+                            <span class="text-gray-500 line-through text-[6px] md:hidden">2000 XOF</span>
+                        </span>
+                        <button class="rounded-full border-1 md:p-2 max-md:p-1 md:w-[40px] md:h-[40px] max-md:w-[25px] max-md:h-[25px]">
+                            <img src="../images/add-to-cart.png" class="w-full" alt="">
+                        </button>
+                    </div>
+                </div>                                                   
+            </div>
+        </section>
+        <section class="max-md:h-[180px] relative mx-auto md:w-[1000px]  my-10 px-2 py-1 md:max-w-[1200px] bg-[url('../images/sup.jpg')] bg-no-repeat bg-cover bg-center h-[450px] max-md:w-[90%]">
+            <h3 class="text-3xl font-bold text-white max-md:font-semibold max-md:text-xl">En promotion</h3>
+            <button class="absolute cursor-pointer border-1 rounded-sm px-1 z-10 top-[50px] py-1 right-12 bg-white text-green-800 border-green-800">Tout voir</button>
+            <div class=" text-white md:w-2/5 md:mt-50 md:ml-4">
+                <p class="text-xl font-medium max-md:font-light">Nom du produit</p>
+                <span class="text-[12px] max-md:text-[8px]">
+                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité.
+                </span>
+                <div class="md:mt-5">
+                    <span class="font-light">1500 XOF</span><span class="line-through text-[12px] text-gray-300/80">2000 XOF</span>
+                    <button class="px-4 py-1 cursor-pointer rounded-md md:ml-10 bg-green-800 ">
+                        Shop now
+                    </button>
                 </div>
             </div>
         </section>
-        <section class="relative mx-auto w-[900px] my-10 px-2 py-1 lg:max-w-[900px] bg-[url('../images/sup.jpg')] bg-no-repeat bg-cover bg-center h-[450px]">
-            <h3 class="text-3xl font-bold text-white">En promotion</h3>
-            <button class="absolute cursor-pointer border-1 rounded-sm px-1 z-10 top-[50px] py-1 right-12 bg-white text-green-800 border-green-800">Tout voir</button>
-            <div class="text-white lg:w-2/5 mt-40 ml-4">
-                <p class="text-xl font-medium">Nom du produit</p>
-                <span class="text-[12px]">
-                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité.
-                </span>
-                <span class="font-light">1500XOF</span><span class="line-through text-[12px] text-gray-300/80">2000XOF</span>
-                <br>
-                <button class="px-4 py-1 cursor-pointer rounded-md ml-50 bg-green-800 ">
-                    Shop now
-                </button>
-            </div>
-        </section>
-        <section class=" flex relative mx-auto w-[900px] my-10 px-2 py-1 lg:max-w-[900px] h-[450px]">
+        
+        <!--Pas encore-->
+
+        <section class="hidden flex relative mx-auto w-[900px] my-10 px-2 py-1 lg:max-w-[900px] h-[450px]">
             <div class="h-full w-3/5">
                 <img src="../images/poto.jpg" class="w-full" alt="">
 
@@ -162,7 +316,7 @@
                 </button>
             </div>
         </section>
-        <section class="lg:max-w-[1050px] mx-auto flex">
+        <section class="hidden lg:max-w-[1050px] mx-auto flex">
             <div class="relative w-1/2">
                 <img src="../images/selfie.jpg" class="object-cover object-center" alt="">
                 <div class="absolute hidden flex flex-col top-20 right-1 gap-2">
@@ -224,7 +378,7 @@
             </div>
         </section>
     </main>
-    <footer class=" mt-8 bg-gray-500/20">
+    <footer class="hidden mt-8 bg-gray-500/20">
         <div class="pl-[1%] pt-2 flex justify-between max-w-[1050px] mx-auto">
             <ul class="flex text-lg flex-col">
                 <h3>Company</h3>

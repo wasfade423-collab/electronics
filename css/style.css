@@ -1,0 +1,38 @@
+@media (max-width: 768px){
+/*hero début*/
+    .hero{
+        border-radius: 20px;
+        background-image: url('../images/base.png');
+        background-repeat: no-repeat;
+        object-fit:cover;
+        background-position: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 90vw;
+        height: 350px;
+        margin: 0px auto;
+        border: 1px solid black;
+    }
+    .hero div{
+        width: 90%;
+        margin: 100px 30px 0px 20px;
+        
+    }
+    /*hero fin*/
+    /*promotion*/
+    .promotion h3{
+        font-size: 20px;
+    }
+    .promotion button{
+        top: 20px;
+        right: 12px;
+    }
+    .description{
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
