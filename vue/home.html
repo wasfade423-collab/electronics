@@ -104,10 +104,10 @@
         </section>
         <section class="md:mx-[5px] max-md:mx-[1%]  md:my-10 ">
             <div class="space-x-2 mx-auto md:w-[400px]">
-                <h1 class="font-bold max-md:text-center text-4xl max-md:text-[25px] text-center">Nos articles</h1>
+                <h1 class="font-bold text-4xl max-md:text-[25px] text-center">Nos articles</h1>
                 <div class="flex md:justify-center md:m-5 max-md:mx-[15%] gap-10 mt-2 justify-between">
-                    <button class="bg-green-800 px-4 cursor-pointer py-3 md:w-[200px] text-md text-white rounded-sm">Populaires</button>
-                    <button class="border-green-800 cursor-pointer px-4 py-3 md:w-[200px] text-md border-1 text-green-800 rounded-sm">Nouveaux</button>
+                    <button class="bg-green-800 px-4 cursor-pointer max-md:py-1 md:py-3 md:w-[200px] text-md text-white rounded-sm">Populaires</button>
+                    <button class="border-green-800 cursor-pointer max-md:py-1 px-4 md:py-3 md:w-[200px] text-md border-1 text-green-800 rounded-sm">Nouveaux</button>
                 </div>     
             </div>
             <div class="articles flex flex-wrap justify-center gap-3 mt-[30px]">
@@ -278,46 +278,43 @@
                 </div>                                                   
             </div>
         </section>
-        <section class="max-md:h-[180px] relative mx-auto md:w-[1000px]  my-10 px-2 py-1 md:max-w-[1200px] bg-[url('../images/sup.jpg')] bg-no-repeat bg-cover bg-center h-[450px] max-md:w-[90%]">
-            <h3 class="text-3xl font-bold text-white max-md:font-semibold max-md:text-xl">En promotion</h3>
-            <button class="absolute cursor-pointer border-1 rounded-sm px-1 z-10 top-[50px] py-1 right-12 bg-white text-green-800 border-green-800">Tout voir</button>
-            <div class=" text-white md:w-2/5 md:mt-50 md:ml-4">
+        <section class="max-md:h-[180px] relative mx-auto md:w-[1000px] my-10 px-2 py-1 md:max-w-[1200px] bg-[url('../images/sup.jpg')] bg-no-repeat bg-cover bg-center h-[450px] max-md:w-[90%]">
+            <button class="max-md:absolute cursor-pointer rounded-sm px-1 z-10 md:top-[50px] max-md:top-[10px] md:py-1 max-md:py-[2px] md:right-12 max-md:right-[10px] bg-white text-green-800 border-green-800">Tout voir</button>
+            <div class="absolute max-md:bottom-1 text-white md:w-2/5 md:mt-50 md:ml-4 max-md:w-full ">
                 <p class="text-xl font-medium max-md:font-light">Nom du produit</p>
-                <span class="text-[12px] max-md:text-[8px]">
-                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité.
-                </span>
+                <div class="m-0 md:text-[12px] max-md:text-[8px] max-md:w-9/12">
+                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone
+                    à l’efficacité.
+                </div>
                 <div class="md:mt-5">
                     <span class="font-light">1500 XOF</span><span class="line-through text-[12px] text-gray-300/80">2000 XOF</span>
-                    <button class="px-4 py-1 cursor-pointer rounded-md md:ml-10 bg-green-800 ">
-                        Shop now
+                    <button class="max-md:ml-0 px-4 py-1 cursor-pointer rounded-md md:ml-10 bg-green-800 ">
+                        Commander
                     </button>
                 </div>
             </div>
         </section>
-        
-        <!--Pas encore-->
-
-        <section class="hidden flex relative mx-auto w-[900px] my-10 px-2 py-1 lg:max-w-[900px] h-[450px]">
-            <div class="h-full w-3/5">
-                <img src="../images/poto.jpg" class="w-full" alt="">
-
+        <section class="max-md:w-[90%] border-1 max-md:h-[180px] max-md:py-2 md:w-[1000px] md:max-w-[1200px] flex relative mx-auto md:w-[900px] my-10 pl-2 py-1 md:max-w-[900px] md:h-[450px]">
+            <div class="h-full md:w-3/5 max-md:w-1/2 max-md:pt-1">
+                <img src="../images/poto.jpg" class="h-full w-full" alt="">
             </div>
-            <h3 class="text-3xl font-bold text-white">En promotion</h3>
-            <button class="absolute border-1 cursor-pointer rounded-sm px-1 z-10 top-[50px] py-1 right-12 bg-white text-green-800 border-green-800">Tout voir</button>
-            <div class="text-black lg:w-2/5 mt-40 ml-1">
-                <p class="text-xl font-medium">Nom du produit</p>
-                <span class="text-[12px]">
-                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone, iMac et accessoires high-tech. Un design épuré, des outils synchronisés, et une ambiance propice à l’efficacité.
-                </span>
+            <button class="absolute border-1 cursor-pointer rounded-sm px-1 z-10 md:top-[50px] py-1 md:right-12 max-md:py-[2px] md:right-12 max-md:right-[10px] max-md:top-[10px] bg-white text-green-800 border-green-800">Tout voir</button>
+            <div class="text-black md:w-2/5 max-md:mt-[10px] max-md:w-1/2 md:mt-40 md:ml-1">
+                <div class="text-[12px] max-md:text-[8px] max-md:mt-[35px]">
+                    <p class="text-xl font-medium max-md:font-light max-md:text-md">Nom du produit</p>
+                    Optimisez votre productivité avec un bureau intelligent intégrant smartphone
+                    à l’efficacité.
+                </div>
                 <span class="font-light">1500XOF</span><span class="line-through text-[12px] text-gray-400/80">2000XOF</span>
+                
                 <br>
-                <button class="px-4 cursor-pointer text-white py-1 w-[110px] rounded-md ml-30 mt-2 bg-green-800 ">
-                    Shop now
+                <button class="px-4 cursor-pointer text-white py-1 w-[110px] rounded-md md:ml-30 mt-2 bg-green-800 ">
+                    Commander
                 </button>
             </div>
         </section>
-        <section class="hidden lg:max-w-[1050px] mx-auto flex">
-            <div class="relative w-1/2">
+        <section class="md:max-w-[1050px] max-md:w-screen max-md:flex-col mx-auto flex">
+            <div class="md:relative md:w-1/2 max-md:w-full">
                 <img src="../images/selfie.jpg" class="object-cover object-center" alt="">
                 <div class="absolute hidden flex flex-col top-20 right-1 gap-2">
                     <li class="border-1 border-[#E1E1E1] lg:w-[100px]">
@@ -331,7 +328,7 @@
                     </li>                    
                 </div>
             </div>
-            <div class="w-1/2 flex flex-col gap-2">
+            <div class="md:w-1/2 p-1 flex flex-col gap-2">
                 <h3 class="text-center font-bold text-2xl my-2">Nom de l'article</h3>
                 <span>
                     Un son et un style qui se remarquent.
@@ -345,33 +342,35 @@
                     <span>1500XOF</span>
                     <span class="text-gray-500/80 text-[14px] line-through">2000XOF</span>
                 </div>
-                <select class=" w-3/5 my-2 rounded-sm outline-none p-1 border-1 border-green-800 text-green-800 text-lg" name="color" id="color">
-                    <option value="" selected disabled>Choisir une couleur</option>
-                    <option value="white">Blanc</option>
-                    <option value="black">Noir</option>
-                    <option value="gray">Gris</option>
-                    <option value="green">Vert</option>
-                    <option value="rose">Rose</option>
-                    <option value="blue">Bleu</option>
-                </select>
-                <div class="flex gap-2">
-                    <button class="cursor-pointer rounded-sm flex justify-center items-center border-1 text-3xl border-green-800 h-[32px] w-[32px]">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
-                        </svg>                        
-                    </button>
-                    <button class="cursor-pointer rounded-sm border-1 text-2xl border-green-800 bg-green-800/80 text-white h-[32px] w-[32px]">1</button>
-                    <button class="cursor-pointer rounded-sm border-1 border-green-800 text-green-800 flex justify-center items-center text-3xl  h-[32px] w-[32px]">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                        </svg>
-                    </button>
+                <div class="flex max-md:flex-row max-md:justify-between  md:flex-col">
+                    <select class="w-2/5 my-2 rounded-sm outline-none p-1 border-1 border-green-800 text-green-800 text-lg" name="color" id="color">
+                        <option value="" selected disabled>Choisir une couleur</option>
+                        <option value="white">Blanc</option>
+                        <option value="black">Noir</option>
+                        <option value="gray">Gris</option>
+                        <option value="green">Vert</option>
+                        <option value="rose">Rose</option>
+                        <option value="blue">Bleu</option>
+                    </select>
+                    <div class="flex max-md:mt-2 gap-2 w-2/5">
+                        <button class="cursor-pointer rounded-sm flex justify-center items-center border-1 text-3xl border-green-800 h-[32px] w-[32px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
+                            </svg>                        
+                        </button>
+                        <button class="cursor-pointer rounded-sm border-1 text-2xl border-green-800 bg-green-800/80 text-white h-[32px] w-[32px]">1</button>
+                        <button class="cursor-pointer rounded-sm border-1 border-green-800 text-green-800 flex justify-center items-center text-3xl  h-[32px] w-[32px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="flex gap-4 w-10/12 mx-auto my-4">
-                    <button class=" w-1/2 cursor-pointer rounded-sm border-1 text-2xl border-green-800 px-2 py-1 bg-green-800/80 text-white ">
+                <div class="flex gap-4 w-9/10 mx-auto my-4">
+                    <button class=" w-1/2 cursor-pointer rounded-sm border-1 text-2xl max-md:text-lg border-green-800 px-2 py-1 bg-green-800/80 text-white ">
                         Ajouter au Panier
                     </button>
-                    <button class="w-1/2 cursor-pointer rounded-sm border-1 border-green-800 py-1 px-2 text-green-800 flex justify-center items-center text-3xl">
+                    <button class="w-1/2 cursor-pointer rounded-sm border-1 border-green-800 py-1 m px-2 text-green-800 flex justify-center items-center text-3xl max-md:text-lg">
                         Retour
                     </button>                    
                 </div>
